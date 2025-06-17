@@ -1,0 +1,1 @@
+Example works with Metro's Kotlin 2.2 branch, but not with 0.3.8 release
