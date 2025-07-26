@@ -1,0 +1,24 @@
+plugins {
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.metro)
+}
+
+java {
+    sourceCompatibility = libs.versions.java.source.get()
+    targetCompatibility = libs.versions.java.source.get()
+
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(libs.versions.java.toolchain.get())
+    }
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = libs.versions.java.source.get()
+    }
+}
+
+dependencies {
+    implementation(project(":module1"))
+    implementation(project(":module2"))
+}
