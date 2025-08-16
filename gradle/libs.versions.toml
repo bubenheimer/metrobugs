@@ -4,9 +4,9 @@ java-source = '21'
 
 java-toolchain = '21'
 
-kotlin = '2.2.0'
+kotlin = '2.2.10'
 
-metro = '0.5.3'
+metro = '0.6.0'
 
 [plugins]
 
